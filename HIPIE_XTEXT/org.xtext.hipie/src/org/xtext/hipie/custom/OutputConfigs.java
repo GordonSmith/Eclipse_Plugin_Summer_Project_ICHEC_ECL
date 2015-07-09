@@ -20,7 +20,7 @@ public class OutputConfigs implements IOutputConfigurationProvider {
 	   public Set<OutputConfiguration> getOutputConfigurations() {
 	    OutputConfiguration defaultOutput = new OutputConfiguration(IFileSystemAccess.DEFAULT_OUTPUT);
 	    defaultOutput.setDescription("Output Folder");
-	    defaultOutput.setOutputDirectory("./src-gen");
+	    defaultOutput.setOutputDirectory("./gen");
 	    defaultOutput.setOverrideExistingResources(true);
 	    defaultOutput.setCreateOutputDirectory(true);
 	    defaultOutput.setCleanUpDerivedResources(true);
@@ -28,7 +28,7 @@ public class OutputConfigs implements IOutputConfigurationProvider {
 
 	    OutputConfiguration databomb = new OutputConfiguration(DATABOMB_OUTPUT);
 	    databomb.setDescription("Output for databombs");
-	    databomb.setOutputDirectory("./data_gen");
+	    databomb.setOutputDirectory("./gen");
 	    databomb.setOverrideExistingResources(true);
 	    databomb.setCreateOutputDirectory(true);
 	    databomb.setCleanUpDerivedResources(false);
@@ -36,7 +36,7 @@ public class OutputConfigs implements IOutputConfigurationProvider {
 	    
 	    OutputConfiguration htmlgen = new OutputConfiguration(HTML_OUTPUT);
 	    htmlgen.setDescription("Output for HTML");
-	    htmlgen.setOutputDirectory("./vis_gen");
+	    htmlgen.setOutputDirectory("./gen");
 	    htmlgen.setOverrideExistingResources(true);
 	    htmlgen.setCreateOutputDirectory(true);
 	    htmlgen.setCleanUpDerivedResources(false);
